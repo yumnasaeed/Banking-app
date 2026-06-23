@@ -1,71 +1,96 @@
-# Banking-application
-Secure Banking Management System built with Java, Spring Boot, Spring Security, JWT Authentication, MySQL, JPA/Hibernate, and REST APIs. Features account management, customer management, transactions, loans, and authentication.
-# 🏦 Banking Application (Java Project)
+#  Banking Application (Spring Boot + JWT Security)
 
-## 📌 Overview
-This is a console-based **Banking Application** built using Java. The project demonstrates core banking operations and Object-Oriented Programming (OOP) concepts.
-
-It allows users to perform basic banking functions such as account creation, deposit, withdrawal, and balance inquiry.
+A secure and scalable backend Banking Application built using Spring Boot. This project implements JWT-based authentication and Spring Security to protect APIs and manage user access.
 
 ---
 
-## 🚀 Features
-- Create new bank account
-- Deposit money
-- Withdraw money
-- Check account balance
-- Simple and interactive console interface
-- OOP-based structure (classes & objects)
+##  Features
+
+- User Authentication (Register/Login)
+- JWT Token-based Security
+- Role-based Access Control (if applicable)
+- Account Management
+- Loan Request Handling
+- Secure REST APIs
+- Layered Architecture (Controller, Service, Repository)
+- DTO-based request handling
 
 ---
 
-## 🧠 Concepts Used
-- Object-Oriented Programming (OOP)
-- Classes and Objects
-- Encapsulation
-- Methods and Constructors
-- File Handling (if included in your project)
-- Exception Handling (if used)
+##  Tech Stack
+
+- Java
+- Spring Boot
+- Spring Security
+- JWT (JSON Web Token)
+- Hibernate / JPA
+- MySQL
+- Maven
 
 ---
 
-## 🛠️ Tech Stack
-- Java (Core Java)
-- IntelliJ IDEA / Eclipse (IDE)
+##  Security Features
+
+- Custom UserDetailsService implementation
+- JWT Token Provider for secure authentication
+- JWT Authentication Filter
+- Security Configuration using Spring Security
+- Stateless session management
 
 ---
 
-## 📁 Project Structure
-BankingApplication-main/
+##  Project Structure
+
+src/main/java
 │
-├── src/
-│ └── (Java source files)
+├── controller
+├── service
+├── repository
+├── dto
+│   ├── AccountRequest
+│   ├── AuthRequest
+│   ├── LoanRequest
 │
-├── .gitattributes
-├── README.md 
-## ▶️ How to Run
+├── security
+│   ├── JwtTokenProvider
+│   ├── JwtAuthenticationFilter
+│   ├── CustomUserDetailsService
+│   ├── SecurityConfig
+│
+└── BankingApplication.java
 
-###  Clone the repository
-```bash
-git clone https://github.com/yumnasaeed/Banking-app.git
- Open project in IDE
+---
 
-Open in IntelliJ IDEA or Eclipse
+##  API Flow
 
- Run the application
+Client → Controller → Service → Repository → Database
 
-Run the main Java file
+Authentication Flow:
+Login → JWT Token Generation → Token Validation → Access Protected APIs
 
- Output (Optional)
+---
 
-Add screenshots of your console output here.
+##  Learning Outcomes
 
- Author
+- Spring Boot backend development
+- JWT authentication and authorization
+- Spring Security configuration
+- DTO-based clean architecture
+- Secure REST API design
+- Real-world backend system structure
 
-Yumna Saeed
+---
 
- GitHub Repository
+##  Future Improvements
 
-https://github.com/yumnasaeed/Banking-app
+- Frontend integration (React/Angular)
+- Transaction history module
+- Email notifications
+- Advanced role-based system (Admin/User)
+- Microservices architecture
 
+---
 
+##  Author
+
+Yumna Saeed  
